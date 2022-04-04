@@ -7,6 +7,15 @@
     <title>Fő oldal</title>
 
 <style>
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: black;
+}
+
+
 h1 {
   color: rgb(255, 252, 127);
   text-align: center;
@@ -38,13 +47,34 @@ body {
   display: block;
   color: black;
   text-align: center;
-  padding: 25px 5%;
+  padding: 25px 3% ;
   text-decoration: none;
 }
 
 .topnav a:hover {
   background-color: black;
   color: rgb(255, 252, 127);
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: rgb(255, 252, 127);
+  border: none;
+  border-radius: 15px;
+}
+
+.button:hover {background-color:rgb(255, 252, 127) }
+
+.button:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 </style>
 </head>
@@ -81,9 +111,9 @@ body {
   <b>Edzéstipp :</b> <br> <br>
   Itt nem fontos a hátizmokat összehúzni a mozdulat alsó pontján, mivel pont az a lényeg, hogy a karod erejével mozgasd a rudat. Az alsó ponton feszíts rá keményen a bicepszedre!</p>
 
-  <div class="topnav">
-    <a href="#Vissza"><h1>Vissza</h1></a>
-    </div>
+<div  class="sticky"> <a href="#Vissza"></a> <button onclick="document.location='#Vissza'" class="button">Vissza</button></div>
+
+
 <H1 id="fekvotamasz">fekvőtámasz</H1>
 <iframe style="border: none;"  src="https://player.vimeo.com/video/181928622?autoplay=0&amp;title=0&amp;byline=0&amp;portrait=0" allow="fullscreen; picture-in-picture" allowfullscreen="allowfullscreen" class="widget-vimeo-iframe" height="300px" width="100%" ></iframe>
 <p>A fekvőtámasz egy testhelyzet, melyet jellemzően karhajlítás-nyújtással kombinálva testgyakorlatként az izmok erősítésére használnak. A gyakorlat erősíti a mell-, kar-, has-, hát-, fenék- és lábizmokat.
@@ -104,9 +134,7 @@ body {
 </p> 
 
 
-<div class="topnav">
-  <a href="#Vissza"><h1>Vissza</h1></a>
-  </div>
+
 <H1 id="Guggolaspadra">Guggolás padra</H1>
 <iframe style="border: none;" src="https://player.vimeo.com/video/130222525?autoplay=0&amp;title=0&amp;byline=0&amp;portrait=0" allow="fullscreen; picture-in-picture" allowfullscreen="allowfullscreen" class="widget-vimeo-iframe" height="300px" width="100%" ></iframe>
 <p>A padra guggolás helyesen végezve a négyfejű combizmot, a combhajlítókat és a farizmot dolgoztatja meg. Koncentráltan, lassan érdemes végezni, ami sokkal intenzívebb, ill. más jellegű terhelésnek teszi ki a combodat, mint a hagyományos guggolás. Térdfájósoknak jó alternatíva lehet (nyilvánvalóan a térdprobléma fokától és jellegétől függően).
@@ -119,9 +147,7 @@ Ez a mozgás, egyike a legjobb gyakorlatoknak, mivel ez érinti a test fő izomc
 <br>
 <br>
 </p>
-<div class="topnav">
-  <a href="#Vissza"><h1>Vissza</h1></a>
-  </div>
+
 <H1 id="Evezesgepenulve">Evezés gépen ülve</H1>
 <iframe style="border: none;" src="https://player.vimeo.com/video/130737809?autoplay=0&amp;title=0&amp;byline=0&amp;portrait=0" allow="fullscreen; picture-in-picture" allowfullscreen="allowfullscreen" class="widget-vimeo-iframe" height="300px" width="100%" ></iframe>
 <p>Az evezés gépen ülve a hátizom középső régióit dolgoztatja meg, de a karod tartásának variálásával a külső része is stimulálható. <br> <br>
@@ -141,9 +167,7 @@ Húzd hátra a könyöködet és keményen feszíts rá a hátadra, majd engedd 
 <br>
 <br>
 Ha szélesebben fogod a karokat, akkor a hátad belső része kapja a terhelés javát, míg ha szűkebben fogod meg őket, akkor a hátizom külsőbb régióit fogod tudni hatékonyabban megdolgoztatni. A gyakorlat helyettesíthető kábeles evezéssel.</p>
-<div class="topnav">
-  <a href="#Vissza"><h1>Vissza</h1></a>
-  </div>
+
 <H1 id="Kitores">Kitörés</H1>
 <iframe style="border: none;"  src="https://player.vimeo.com/video/130221745?autoplay=0&amp;title=0&amp;byline=0&amp;portrait=0" allow="fullscreen; picture-in-picture" allowfullscreen="allowfullscreen" class="widget-vimeo-iframe" height="300px" width="100%" ></iframe>
 <p>Ez a mozgás a combhajlítókat, a farizmokat és a négyfejű combizmot fejleszti. Miközben erőteljes izom-összehúzódás éri a combizmokat, ugyanakkor erőteljes nyújtó hatása is van a gyakorlatnak, ami ezáltal kiemelten hatékonnyá és komplexszé teszi. A kitörés helyesen végezve rendkívül intenzív, folyamatos terhelést biztosít, így mindenképpen érdemes beilleszteni a lábedzésedbe.
@@ -160,9 +184,7 @@ Ha szélesebben fogod a karokat, akkor a hátad belső része kapja a terhelés 
 <br>
 Amint leereszkedtél ebbe a helyzetbe, tégy egy újabb lépést előre a másik lábaddal, úgy, hogy közben kinyújtod az eddig behajlított lábadat, tehát fel-le ereszkedve lépegetsz előre, gyakorlatilag támadóállásban. A másik verzió, ha visszalépsz, és a másik lábaddal lépsz ki, majd azzal is vissza - így egy helyben kilépegetve, "helytakarékosan" tudod végezni a gyakorlatot.
 </p>
-<div class="topnav">
-  <a href="#Vissza"><h1>Vissza</h1></a>
-  </div>
+
 
 <H1 id="Vallbolnyomas">Vállból nyomás</H1>
 <iframe style="border: none;"  src="https://player.vimeo.com/video/130419946?autoplay=0&amp;title=0&amp;byline=0&amp;portrait=0" allow="fullscreen; picture-in-picture" allowfullscreen="allowfullscreen" class="widget-vimeo-iframe" height="300px" width="100%" ></iframe>
@@ -182,9 +204,7 @@ A gyakorlat elsősorban az első és az oldalsó deltaizmokat fejleszti. <br>
 <br>
 <br>
 Nyomd ki mind a két súlyzót egyszerre a fejed fölé. A gyakorlat végzése közben ne dőlj hátra. Engedd vissza a súlyokat, és folytasd a gyakorlatot egyenletes ütemben.</p>
-<div class="topnav">
-  <a href="#Vissza"><h1>Vissza</h1></a>
-  </div>
+
 
 <H1 id="Felhuzas">Felhúzás</H1>
 <iframe style="border: none;"  src="https://player.vimeo.com/video/130737916?autoplay=0&amp;title=0&amp;byline=0&amp;portrait=0" allow="fullscreen; picture-in-picture" allowfullscreen="allowfullscreen" class="widget-vimeo-iframe" height="300px" width="100%"></iframe>
@@ -203,9 +223,7 @@ A gyakorlat a hát alsó és középső részének izomzatát, a csípő izmait,
 A felhúzás rúddal végzendő gyakorlat minden esetben. Állj úgy, hogy lábszárcsont éppen érintse a súlyzót. Hajolj előre természetesen, és ragadd meg a rudat az egyik kezedet előre-, a másik kezedet hátrafordítva (a fogóerő növelésére). Egyenesedj ki, természetesen használva lábad és hátad együttes erejét. Az emelés kezdetétől tartsd a rudat a testedhez a lehető legközelebb. Elképzelhető hogy a rúd felhorzsolja a bokádat... ez ilyen. Tekintsd harci sebnek!
 </p>
 
-<div class="topnav">
-  <a href="#Vissza"><h1>Vissza</h1></a>
-  </div>
+
 <h1 id="Tolodzkodas">Tolódzkodás</h1>
 <iframe style="border: none;"  src="https://player.vimeo.com/video/130071790?autoplay=0&amp;title=0&amp;byline=0&amp;portrait=0" allow="fullscreen; picture-in-picture" allowfullscreen="allowfullscreen" class="widget-vimeo-iframe" height="300px" width="100%"></iframe>
 <p>A tolódzkodás egy remek mellizom-gyakorlat, különösen, ha a rudak viszonylag távol (70-85 cm) vannak egymástól. Az egymáshoz túl közel lévő rudak nagyobb mértékben mozgatják a tricepszet, bár azért a mellizom alsó és külső részét is megterhelik. Tehát a tolódzkodás a mellre akkor fog leginkább hatni, ha relatíve széles fogást alkalmazol.
@@ -228,9 +246,6 @@ Engedd le magad olyan mélyre, amennyire csak bírod, a kinyomás végén pedig 
 <br>
 A szélesebbre állított korláton végzett gyakorlattal a mell külső része edzhető. Minél szűkebb a fogás, annál inkább a tricepszre helyeződik a hangsúly. A tolódzkodás gépen is végezhető, itt vagy a tested részleges tehermentesítésén keresztül könnyítik a gyakorlatot, vagy egyszerűen más mechanikája lesz az egésznek, ami koncentráltabb végrehajtást tesz lehetővé.
 </p>
-<div class="topnav">
-<a href="#Vissza"><h1>Vissza</h1></a>
-</div>
 </body>
 
 </html>
